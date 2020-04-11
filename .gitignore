@@ -30,3 +30,15 @@
 *.exe
 *.out
 *.app
+
+# LaTex auxilary files
+*.log
+*.aux
+*.nav
+*.out
+*.toc
+*.vrb
+*.snm
+
+# SwapF Files
+*.swp

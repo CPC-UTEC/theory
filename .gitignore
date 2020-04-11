@@ -40,5 +40,7 @@
 *.vrb
 *.snm
 
-# SwapF Files
+# Swap Files
 *.swp
+
+.DS_Store

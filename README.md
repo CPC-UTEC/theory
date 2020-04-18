@@ -19,6 +19,6 @@ Frequently Asked Questions: [FAQ](https://bit.ly/2Xf09Fa)
 ### Week 2 - Pointers and the STL
 
 **Useful Links:**  
-- [PPT](./Lesson1/stl.pdf)  
+- [PPT](./Lesson2/stl.pdf)  
 - [Contest](https://vjudge.net/contest/369163#rank)  
 

@@ -15,3 +15,11 @@ Frequently Asked Questions: [FAQ](https://bit.ly/2Xf09Fa)
 - [Lecture](https://utec.zoom.us/rec/share/yvR1EIGp51JLeZWU0mPSA_cKM6jhT6a81SJK-fdeyU4vwZjMUZVlbuKMvjCoylDn)  
 - [Contest](https://vjudge.net/contest/367714#rank)  
 
+
+### Week 2 - Pointers and the STL
+
+**Useful Links:**  
+- [PPT](./Lesson2/stl.pdf)  
+- [Lecture](https://utec.zoom.us/rec/share/29BbdI7s8UJIBdLCwWziaIEQF625eaa8h3cX8vIFn0kON0waexQVKPXcTui4L84W)
+- [Contest](https://vjudge.net/contest/369163#rank)  
+

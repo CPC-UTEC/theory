@@ -123,8 +123,8 @@ int main(){
 
         \begin{lstlisting}[language=C++, basicstyle=\small\ttfamily]
 int a = 5;
-int *p = a;
-cout<<*p<<endl;
+int *p = &a;
+cout << *p << endl;
         \end{lstlisting}
 
         &
@@ -137,8 +137,8 @@ cout<<*p<<endl;
 
         \begin{lstlisting}[language=C++, basicstyle=\small\ttfamily]
 int a = 5;
-int *p = a;
-cout<<p<<endl;
+int *p = &a;
+cout << p << endl;
         \end{lstlisting}
 
         &
@@ -151,7 +151,7 @@ cout<<p<<endl;
 
         \begin{lstlisting}[language=C++, basicstyle=\small\ttfamily]
 int *p = 5;
-cout<<*p<<endl;
+cout << *p << endl;
         \end{lstlisting}
 
         &

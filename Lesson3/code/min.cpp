@@ -24,7 +24,7 @@ int main() {
 		mn = min(a, n);
 		auto stop = std::chrono::high_resolution_clock::now();
 
-		auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(stop - start);
+		auto duration = std::chrono::duration_cast<std::chrono::microseconds>(stop - start);
 
 		cout << n << '\t' << mn << '\t' << duration.count() << endl;
 	}

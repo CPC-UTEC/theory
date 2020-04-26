@@ -18,8 +18,19 @@ Frequently Asked Questions: [FAQ](https://bit.ly/2Xf09Fa)
 
 ### Week 2 - Pointers and the STL
 
+**Summary**: This was a lesson on computer memory, pointers, reference and the STL. Presented the concept of *data structures* and their impact on performance.
+
 **Useful Links:**  
 - [PPT](./Lesson2/stl.pdf)  
 - [Lecture](https://utec.zoom.us/rec/share/29BbdI7s8UJIBdLCwWziaIEQF625eaa8h3cX8vIFn0kON0waexQVKPXcTui4L84W)
 - [Contest](https://vjudge.net/contest/369163#rank)  
+
+
+### Week 3 - Pointers and the STL
+
+**Summary**: Introductory lesson to algorithmic analysis. Introduction to the computational complexity, asymptotic bounding and *Big Oh* notation.
+
+**Useful Links:**  
+- [PPT](./Lesson3/asymptotic-notation.pdf)  
+- [Contest](https://vjudge.net/contest/370435)  
 

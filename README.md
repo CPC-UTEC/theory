@@ -31,6 +31,7 @@ Frequently Asked Questions: [FAQ](https://bit.ly/2Xf09Fa)
 **Summary**: Introductory lesson to algorithmic analysis. Introduction to the computational complexity, asymptotic bounding and *Big Oh* notation.
 
 **Useful Links:**  
-- [PPT](./Lesson3/asymptotic-notation.pdf)  
+- [PPT](./Lesson3/asymptotic-notation.pdf)
+- [Lecture](https://utec.zoom.us/rec/share/xZRHJJ3-zGFLctbzzGicArZwPr_lT6a80SdN_PAMyhr4QTa2k50GsH-rr7MnYR6f)
 - [Contest](https://vjudge.net/contest/370435)  
 

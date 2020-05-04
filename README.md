@@ -26,7 +26,7 @@ Frequently Asked Questions: [FAQ](https://bit.ly/2Xf09Fa)
 - [Contest](https://vjudge.net/contest/369163#rank)  
 
 
-### Week 3 - Pointers and the STL
+### Week 3 - Asymptotic Analysis
 
 **Summary**: Introductory lesson to algorithmic analysis. Introduction to the computational complexity, asymptotic bounding and *Big Oh* notation.
 
@@ -34,4 +34,12 @@ Frequently Asked Questions: [FAQ](https://bit.ly/2Xf09Fa)
 - [PPT](./Lesson3/asymptotic-notation.pdf)
 - [Lecture](https://utec.zoom.us/rec/share/xZRHJJ3-zGFLctbzzGicArZwPr_lT6a80SdN_PAMyhr4QTa2k50GsH-rr7MnYR6f)
 - [Contest](https://vjudge.net/contest/370435)  
+
+### Week 4 - Complete Search: Introduction
+
+
+**Useful Links:**  
+- [PPT](./Lesson4/complete-search.pdf)
+- [Lecture](https://utec.zoom.us/rec/play/78UuJLj5rTw3E93BuASDC_B5W9W1ePms1iVP-fENzUvhBnJQYFukYecXYrYrb7dDMtFyMcIe6KNigDg9)
+- [Contest](https://vjudge.net/contest/371897)  
 

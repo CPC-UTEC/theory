@@ -11,7 +11,7 @@ Frequently Asked Questions: [FAQ](https://bit.ly/2Xf09Fa)
 **Summary**: This was an introductory lesson to competitive programming and programming in general. We covered what is competitive programming, what is an algorithm, what is a computer program and the basis of C++.  
 
 **Useful Links:**  
-- [PPT](./Lesson1/introduction.pdf)  
+- [PPT](./Lessons/1/introduction.pdf)  
 - [Lecture](https://utec.zoom.us/rec/share/yvR1EIGp51JLeZWU0mPSA_cKM6jhT6a81SJK-fdeyU4vwZjMUZVlbuKMvjCoylDn)  
 - [Contest](https://vjudge.net/contest/367714#rank)  
 
@@ -21,7 +21,7 @@ Frequently Asked Questions: [FAQ](https://bit.ly/2Xf09Fa)
 **Summary**: This was a lesson on computer memory, pointers, reference and the STL. Presented the concept of *data structures* and their impact on performance.
 
 **Useful Links:**  
-- [PPT](./Lesson2/stl.pdf)  
+- [PPT](./Lessons/2/stl.pdf)  
 - [Lecture](https://utec.zoom.us/rec/share/29BbdI7s8UJIBdLCwWziaIEQF625eaa8h3cX8vIFn0kON0waexQVKPXcTui4L84W)
 - [Contest](https://vjudge.net/contest/369163#rank)  
 
@@ -31,7 +31,7 @@ Frequently Asked Questions: [FAQ](https://bit.ly/2Xf09Fa)
 **Summary**: Introductory lesson to algorithmic analysis. Introduction to the computational complexity, asymptotic bounding and *Big Oh* notation.
 
 **Useful Links:**  
-- [PPT](./Lesson3/asymptotic-notation.pdf)
+- [PPT](./Lessons/3/asymptotic-notation.pdf)
 - [Lecture](https://utec.zoom.us/rec/share/xZRHJJ3-zGFLctbzzGicArZwPr_lT6a80SdN_PAMyhr4QTa2k50GsH-rr7MnYR6f)
 - [Contest](https://vjudge.net/contest/370435)  
 
@@ -39,7 +39,7 @@ Frequently Asked Questions: [FAQ](https://bit.ly/2Xf09Fa)
 
 
 **Useful Links:**  
-- [PPT](./Lesson4/complete-search.pdf)
+- [PPT](./Lessons/4/complete-search.pdf)
 - [Lecture](https://utec.zoom.us/rec/play/78UuJLj5rTw3E93BuASDC_B5W9W1ePms1iVP-fENzUvhBnJQYFukYecXYrYrb7dDMtFyMcIe6KNigDg9)
 - [Contest](https://vjudge.net/contest/371897)  
 

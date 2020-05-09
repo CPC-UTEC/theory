@@ -1,0 +1,132 @@
+\documentclass{beamer}
+\usetheme{metropolis}
+
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{tcolorbox}
+\usepackage{listings}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{lmodern}
+\usefonttheme[onlymath]{serif}
+
+\begin{document}
+\newcommand{\tabitem}{~~\llap{\textbullet}~~}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstset{
+	language=C++,
+	basicstyle=\scriptsize\ttfamily,
+	keywordstyle=\color{magenta},
+	stringstyle=\color{codepurple},
+	numbers=left,
+	numbersep=5pt,
+	numberstyle=\tiny\color{codegray},
+	backgroundcolor=\color{backcolour},
+	showstringspaces=false,
+	tabsize=4
+}
+
+
+\title{Brute Force: Multiple Queries}
+\subtitle{It makes all the difference}
+\author{UTEC - Competitive Programming}
+\date{}
+
+\maketitle
+
+\begin{frame}
+	\frametitle{Challenge}
+
+	Given a number $n$, determine if it is prime.
+
+	\begin{itemize}
+		\item<1-> Design an algorithm for  $n \leq 10^8$
+		\item<2-> Now make one for $n \leq 10^{18}$
+		\item<3-> What if $n \leq 10^7$, but there are $q$ ($q \leq 10^7$) queries.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Sieve of Eratosthenes}
+
+	\begin{itemize}
+		\item The following is a very famous sieve for calculating what numbers are prime.
+		\item This sieve has a complexity of $O(nlg(lgn))$. \textit{Why?}
+	\end{itemize}
+
+	\lstinputlisting{listings/sieve.cpp}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Preprocessing}
+
+	\begin{itemize}
+		\item When we have multiple queries, we can sometimes compute some values that will help us answer queries.
+		\item This is called preprocessing and the idea is that it reduces the time per query without being 
+		\item Lets say $T_p(n)$ is the complexity of preprocessing and $T_q(n)$ is the complexity per query after said preprocessing, the complexity of our program would be $O(max(T_{p}(n), Q T_{q}(n)))$.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Challenge - Prefix Sums}
+
+	You are given an array $a$ of size $n$. You will receive $q$ queries that will consist of to numbers $l$ ans $r$. For each you need to print $\sum\limits_{i = l}^{r}a_i$.
+
+	\begin{itemize}
+		\item<1-> Design an algorithm to solve this for $n,q \leq 10^4$.
+		\item<2-> Can we solve this problem for $n,q \leq 10^6$?
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Solution - Prefix Sums}
+
+	\begin{itemize}
+		\item By preprocessing the array and calculating the sum for any prefix we can answer queries with a complexity of O(1). 
+		\item The final complexity for our solution would be O(min(n, q)).
+	\end{itemize}
+
+	\lstinputlisting[basicstyle=\tiny\ttfamily]{listings/prefix.cpp}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Challenge - Offline Processing}
+
+	You are given $q$ queries. Each consists of 2 numbers $n$ ans $p$. For each query output $|\{x : x \leq n \wedge p|x\}|$. $q \leq 10^6$ and $p \leq n \leq 10^6$
+
+	\begin{itemize}
+		\item Any ideas?
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Offline Processing}
+
+	\begin{itemize}
+		\item In many cases the order in which we answer the queries doesn't affect their answers.
+		\item Offline processing is changing the order of queries in order to improve overall speed.
+		\item \textbf{IMPORTANT:} In order to be able to process queries offline, all queries must be independent (The result of a query is not affected by previous queries).
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Solution - Offline Processing}
+
+	\begin{itemize}
+		\item We can use a sieve to find all the divisors of a number.
+		\item Order the queries in ascending order according to their $n$.
+		\item Initialize counter \texttt{cnt}. \texttt{cnt[i]} stores how many values are divisible by $i$.
+		\item Iterate $x$ through all numbers from 1 to $n_{max}$ and increase the counter of all divisors of $x$ by one.
+		\item Answer all queries where $n_i = x$.
+	\end{itemize}
+\end{frame}
+
+\section{Thanks for Listening!}
+
+\end{document}

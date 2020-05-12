@@ -46,11 +46,12 @@ Frequently Asked Questions: [FAQ](https://bit.ly/2Xf09Fa)
 - [Contest](https://vjudge.net/contest/371897)  
 
 
-### Week 4 - Multiple Queries
+### Week 5 - Multiple Queries
 
 **Summary**: We show techniques to use when dealing with questions that have multiple queries. Introduce the concepts of preprocessing and offline processing.
 
 **Useful Links:**  
 - [PPT](./Lessons/5/brute-force-ii.pdf)
+- [Lecture](https://utec.zoom.us/rec/share/5MFTJZ6qrnpOR6vGzkTgVoMvOpzOX6a8h3NI8vVezhqrS2nnSuYzvZxOyMYdSvPE)
 - [Contest](https://vjudge.net/contest/373140)  
 

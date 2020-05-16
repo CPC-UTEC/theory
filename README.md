@@ -14,7 +14,7 @@ Frequently Asked Questions: [FAQ](https://bit.ly/2Xf09Fa)
 - [PPT](./Lessons/1/introduction.pdf)  
 - [Lecture](https://utec.zoom.us/rec/share/yvR1EIGp51JLeZWU0mPSA_cKM6jhT6a81SJK-fdeyU4vwZjMUZVlbuKMvjCoylDn)  
 - [Contest](https://vjudge.net/contest/367714#rank)  
-
+- [Solutions](./Lessons/1/solutions/) (davidjgs's code, thanks!)
 
 ### Week 2 - Pointers and the STL
 
@@ -24,7 +24,7 @@ Frequently Asked Questions: [FAQ](https://bit.ly/2Xf09Fa)
 - [PPT](./Lessons/2/stl.pdf)  
 - [Lecture](https://utec.zoom.us/rec/share/29BbdI7s8UJIBdLCwWziaIEQF625eaa8h3cX8vIFn0kON0waexQVKPXcTui4L84W)
 - [Contest](https://vjudge.net/contest/369163#rank)  
-
+- [Solutions](./Lessons/2/solutions/) (jorge160895's code, thanks!)
 
 ### Week 3 - Asymptotic Analysis
 
@@ -34,7 +34,7 @@ Frequently Asked Questions: [FAQ](https://bit.ly/2Xf09Fa)
 - [PPT](./Lessons/3/asymptotic-notation.pdf)
 - [Lecture](https://utec.zoom.us/rec/share/xZRHJJ3-zGFLctbzzGicArZwPr_lT6a80SdN_PAMyhr4QTa2k50GsH-rr7MnYR6f)
 - [Contest](https://vjudge.net/contest/370435)  
-
+- [Solutions](./Lessons/3/solutions/) (davidjgs's code, thanks!)
 
 ### Week 4 - Complete Search: Introduction
 
@@ -46,11 +46,12 @@ Frequently Asked Questions: [FAQ](https://bit.ly/2Xf09Fa)
 - [Contest](https://vjudge.net/contest/371897)  
 
 
-### Week 4 - Multiple Queries
+### Week 5 - Multiple Queries
 
 **Summary**: We show techniques to use when dealing with questions that have multiple queries. Introduce the concepts of preprocessing and offline processing.
 
 **Useful Links:**  
 - [PPT](./Lessons/5/brute-force-ii.pdf)
+- [Lecture](https://utec.zoom.us/rec/share/5MFTJZ6qrnpOR6vGzkTgVoMvOpzOX6a8h3NI8vVezhqrS2nnSuYzvZxOyMYdSvPE)
 - [Contest](https://vjudge.net/contest/373140)  
 

@@ -1,0 +1,160 @@
+\documentclass{beamer}
+\usetheme{metropolis}
+
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{tcolorbox}
+\usepackage{listings}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{lmodern}
+\usefonttheme[onlymath]{serif}
+\usepackage{amsmath}
+
+\begin{document}
+\newcommand{\tabitem}{~~\llap{\textbullet}~~}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstset{
+	language=C++,
+	basicstyle=\scriptsize\ttfamily,
+	keywordstyle=\color{magenta},
+	stringstyle=\color{codepurple},
+	numbers=left,
+	numbersep=5pt,
+	numberstyle=\tiny\color{codegray},
+	backgroundcolor=\color{backcolour},
+	showstringspaces=false,
+	tabsize=4
+}
+
+
+\title{Brute Force: Common Strategies}
+\subtitle{Keep it simple, keep it neat}
+\author{UTEC - Competitive Programming}
+\date{}
+
+\maketitle
+
+\section{Fixing Variables}
+
+\begin{frame}
+	\frametitle{Fixing Variables}
+
+	\begin{itemize}
+		\item One of the most intuitive techniques.
+		\item Usually this problems involve an equation of $m$ variables.
+		\item You will \textit{fix} a variable by making it constant and then try to find the solution under this new constrain.
+		\item You will iterate through all possible values of the fixed variable and see how this fixed solution contributes to the general solution of the problem.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Fixing Variables - Example}
+
+	Given numbers $n$, $a$, $b$ and $c$ find:
+	$$|\{(x, y, z) | x, y, z \in \mathbb{Z}^{+0}
+	\wedge x \leq a \wedge y \leq b \wedge z \leq
+	\wedge \frac{x}{2} + y + 2z = n\}|$$
+
+	\begin{itemize}
+		\item<2-> Fix $x$ and treat it as a constant: $y + 2z = n_0$.
+		\item<3-> Fix $y$: $2z = n_1$
+		\item<4-> Check if there exists a value of $z$ that satisfies the equation.
+		\item<5-> This soultion has a complexity of $O(ab)$. Can we do better?
+	\end{itemize}
+\end{frame}
+
+\section{Fixing Variables}
+
+\begin{frame}
+	\frametitle{Fixing Variables}
+
+	\begin{itemize}
+		\item One of the most intuitive techniques.
+		\item Usually this problems involve an equation of $m$ variables.
+		\item You will \textit{fix} a variable by making it constant and then try to find the solution under this new constrain.
+		\item You will iterate through all possible values of the fixed variable and see how this fixed solution contributes to the general solution of the problem.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Fixing Variables - Example}
+
+	Given numbers $n$, $a$, $b$ and $c$ find:
+	$$|\{(x, y, z) | x, y, z \in \mathbb{Z}^{+0}
+	\wedge x \leq a \wedge y \leq b \wedge z \leq
+	\wedge \frac{x}{2} + y + 2z = n\}|$$
+
+	\begin{itemize}
+		\item<2-> Fix $x$ and treat it as a constant: $y + 2z = n_0$.
+		\item<3-> Fix $y$: $2z = n_1$
+		\item<4-> Check if there exists a value of $z$ that satisfies the equation.
+		\item<5-> This solution has a complexity of $O(ab)$. Can we do better?
+	\end{itemize}
+\end{frame}
+
+\section{Simulation with Brute Force}
+
+\begin{frame}
+	\frametitle{Simulation}
+
+	\begin{itemize}
+		\item Problems that can be solved using this strategy usually have an underlying pattern or rules that we can compute easily.
+		\item To find the answer we just need to let our simulation run until we get the expected results.
+		\item \textbf{Problem:} Consider the following function:
+			$$ f(n) = \begin{cases} \frac{n}{2} & n \equiv 0 \pmod{2}\\
+			3n + 1 & \text{otherwise} \end{cases}$$
+
+			The cycle of a number $n$ is the number of times we need to apply function $f$ so that $n = 1$. Find the maximum cycle between two given numbers $i$ and $j$. $i, j < 10^5$
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Simulation: Example}
+
+	\begin{itemize}
+		\item \textit{Collatz Conjecture:} It's guaranteed that $n$ will reach $1$.
+		\item<2-> Make a function \texttt{count(x)} that counts how many times we need to apply a $f$ to $x$ get $1$:
+		\item<3-> Run that function for all $x$ between $i$ and $j$ and save the maximum.
+		\item<4-> Complexity? Smallest cycle smaller than $10^{5} \approx 400$, therefore $O(400m)$. Where $m = max\{i - j\}$
+	\end{itemize}
+\end{frame}
+
+\section{Weak Constrains}
+
+\begin{frame}
+	\frametitle{Weak Constrains}
+
+	\begin{itemize}
+		\item This problems usually seem hard until you realize an underlying constrain that reduces significantly the search space.
+		\item Even the problem might have some constrains, this might be very far from the constrains that can be deduced by the statement.
+		\item After finding this new constrains we can use simple brute-force.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Weak Constrains: Example}
+
+	Given $n$ and $s$ ($n,s \leq 10^{18}$), find:
+	$$|\{x | x \leq n \wedge x - f(x) \geq s\}|$$
+	Where $f(x)$ is the sum of digits of $x$.
+
+	\begin{itemize}
+		\item Iterating through all possible values of $n$ will never work.
+		\item<2-> Observation 1: $x < s \rightarrow x - f(x) < s$
+		\item<3-> Observation 2: $f(x) \leq 9 \cdot 18$
+		\item<4-> Observation 3: $x \geq s + \leq 9 \cdot 18 \rightarrow x - f(x) \geq s$
+		\item<5-> We only need to check $x \in [s, s + 9 \cdot 18]$!
+		\item<5-> Answer will be \texttt{count}$(s, s + 9 \cdot 18) + n - (s + 9 \cdot 18)$.
+	\end{itemize}
+\end{frame}
+
+\section{Thanks for Listening!}
+
+\end{document}

@@ -55,3 +55,11 @@ Frequently Asked Questions: [FAQ](https://bit.ly/2Xf09Fa)
 - [Lecture](https://utec.zoom.us/rec/share/5MFTJZ6qrnpOR6vGzkTgVoMvOpzOX6a8h3NI8vVezhqrS2nnSuYzvZxOyMYdSvPE)
 - [Contest](https://vjudge.net/contest/373140)  
 
+
+### Week 6 - Common Strategies
+
+**Summary**: We explore three common strategies to solve problems using the brute-force paradigm.
+
+**Useful Links:**  
+- [PPT](./Lessons/6/brute-force-iii.pdf)
+

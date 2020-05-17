@@ -59,7 +59,7 @@
 
 	Given numbers $n$, $a$, $b$ and $c$ find:
 	$$|\{(x, y, z) | x, y, z \in \mathbb{Z}^{+0}
-	\wedge x \leq a \wedge y \leq b \wedge z \leq
+	\wedge x \leq a \wedge y \leq b \wedge z \leq c
 	\wedge \frac{x}{2} + y + 2z = n\}|$$
 
 	\begin{itemize}
@@ -67,35 +67,6 @@
 		\item<3-> Fix $y$: $2z = n_1$
 		\item<4-> Check if there exists a value of $z$ that satisfies the equation.
 		\item<5-> This soultion has a complexity of $O(ab)$. Can we do better?
-	\end{itemize}
-\end{frame}
-
-\section{Fixing Variables}
-
-\begin{frame}
-	\frametitle{Fixing Variables}
-
-	\begin{itemize}
-		\item One of the most intuitive techniques.
-		\item Usually this problems involve an equation of $m$ variables.
-		\item You will \textit{fix} a variable by making it constant and then try to find the solution under this new constrain.
-		\item You will iterate through all possible values of the fixed variable and see how this fixed solution contributes to the general solution of the problem.
-	\end{itemize}
-\end{frame}
-
-\begin{frame}[fragile]
-	\frametitle{Fixing Variables - Example}
-
-	Given numbers $n$, $a$, $b$ and $c$ find:
-	$$|\{(x, y, z) | x, y, z \in \mathbb{Z}^{+0}
-	\wedge x \leq a \wedge y \leq b \wedge z \leq
-	\wedge \frac{x}{2} + y + 2z = n\}|$$
-
-	\begin{itemize}
-		\item<2-> Fix $x$ and treat it as a constant: $y + 2z = n_0$.
-		\item<3-> Fix $y$: $2z = n_1$
-		\item<4-> Check if there exists a value of $z$ that satisfies the equation.
-		\item<5-> This solution has a complexity of $O(ab)$. Can we do better?
 	\end{itemize}
 \end{frame}
 
@@ -149,7 +120,7 @@
 		\item Iterating through all possible values of $n$ will never work.
 		\item<2-> Observation 1: $x < s \rightarrow x - f(x) < s$
 		\item<3-> Observation 2: $f(x) \leq 9 \cdot 18$
-		\item<4-> Observation 3: $x \geq s + \leq 9 \cdot 18 \rightarrow x - f(x) \geq s$
+		\item<4-> Observation 3: $x \geq s + 9 \cdot 18 \rightarrow x - f(x) \geq s$
 		\item<5-> We only need to check $x \in [s, s + 9 \cdot 18]$!
 		\item<5-> Answer will be \texttt{count}$(s, s + 9 \cdot 18) + n - (s + 9 \cdot 18)$.
 	\end{itemize}

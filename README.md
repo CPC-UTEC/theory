@@ -63,3 +63,36 @@ Frequently Asked Questions: [FAQ](https://bit.ly/2Xf09Fa)
 **Useful Links:**  
 - [PPT](./Lessons/6/brute-force-iii.pdf)
 
+
+### Week 8 - Recursion
+
+**Summary**: Recursion is a very important technique as it is the base of many brute force and divide and conquer solutions. In this lecture we attempt to get an in depth understanding of recursion and its applications.
+
+**Useful Links:**
+- [PPT](./Lessons/8/recursion.pdf)
+- [Lecture](https://utec.zoom.us/rec/play/vJN5db2pq2g3T4fEswSDU6d8W460KaOs1HUd__UFmB63VnZVMFagZrJAZOUqWUmLOul0SpO0rnPPeSHb?continueMode=true&_x_zm_rtaid=m976G-GOQIedNnm-I6sWqw.1597627968588.65b4d917ff6c7b8cee6de9f8e7659672&_x_zm_rhtaid=263)
+
+
+### Week 9 - Binary Search
+
+**Summary**: Binary Search is an extremely powerful technique that goes way beyond looking for values in arrays. In this lecture we will look for an in depth understanding of this technique and how it can boost up our complete search solutions.
+
+**Useful Links:**
+- [PPT](./Lessons/9/binary-search.pdf)
+- [Lecture](https://utec.zoom.us/rec/play/uZMpdrqgrDw3EtKV4QSDUfZ8W9ToevisgCMZ_qdYmh21AnVSYVqvY-Yaa-p2YFqEafvy5RY_huJU2Ahz?continueMode=true&_x_zm_rtaid=m976G-GOQIedNnm-I6sWqw.1597627968588.65b4d917ff6c7b8cee6de9f8e7659672&_x_zm_rhtaid=263)
+
+
+## Week 10 - Graphs:
+
+**Summary**: Graphs are an extremely powerful tool for abstraction and problem solving. In this class we introduce the concept of what is a graph, and discuss about the different ways of representing them.
+
+**Useful Links:**  
+- [Lecture](https://utec.zoom.us/rec/play/vsd_d-79_D03GdSX5ASDBPIoW425f62s1ShL8_IOyE-9UXAGN1WnYrQaNuJCHrwDNLeVXxaKAfnQTjs9?continueMode=true&_x_zm_rtaid=m976G-GOQIedNnm-I6sWqw.1597627968588.65b4d917ff6c7b8cee6de9f8e7659672&_x_zm_rhtaid=263)
+
+
+## Week 11 - Trees 
+
+**Summary**: Second week diving in graph theory. We explore trees and the DFS and BFS algorithms.
+
+**Useful Links:**  
+- [Lecture](https://utec.zoom.us/rec/play/vsd_d-79_D03GdSX5ASDBPIoW425f62s1ShL8_IOyE-9UXAGN1WnYrQaNuJCHrwDNLeVXxaKAfnQTjs9?continueMode=true&_x_zm_rtaid=m976G-GOQIedNnm-I6sWqw.1597627968588.65b4d917ff6c7b8cee6de9f8e7659672&_x_zm_rhtaid=263)

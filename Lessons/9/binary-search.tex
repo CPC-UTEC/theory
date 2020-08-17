@@ -71,10 +71,10 @@ Just as it is the case with most divide and conquer algorithms, the most intuiti
 	\End
 
 	\li $m = \floor{\frac{l + r}{2}}$
-	\li \If $A[m] \leq x$ \li \Then 
+	\li \If $A[m] < x$ \li \Then 
 		\Return $\proc{binarySearch}(A, l, m - 1, x)$
 	\End
-	\li \If $A[m] \leq x$ \li \Then 
+	\li \If $A[m] > x$ \li \Then 
 		\Return $\proc{binarySearch}(A, m + 1, r, x)$
 	\End
 	

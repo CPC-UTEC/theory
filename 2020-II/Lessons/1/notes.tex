@@ -1,0 +1,129 @@
+\documentclass{article}
+
+\usepackage{algorithm2e}
+
+\title{Lesson 1: Introduction}
+\author{CPC UTEC - Lecturers Notes}
+
+\setlength{\parskip}{4mm}
+\setlength{\parindent}{0mm}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction to the Course}
+
+\subsection{Scope Objectives}
+
+This is the \textit{CPC@UTEC} official competitive programming beginners course. In the following 16 weeks we will attempt to introduce you to the world of competitive programming and boost your learning process.
+
+Our main objective is to create a solid foundation for the future members of UTECs CPC team in order to ensure a strong legacy that will be up to the standards of international competitions. Because of this the nature of this lessons will be intensive and will require a lot of your time outside of the classroom.
+
+
+\subsection{Topics of the course}
+
+During the following 16 weeks we should cover the following subjects:
+
+\begin{enumerate}
+	\item Algorithmic Analysis
+	\item Complete Search
+	\item Divide and Conquer
+	\item Graphs
+\end{enumerate}
+
+\subsection{Technical Aspects}
+
+In general, when discussing ideas we will work in \textit{pseudocode}, however, coding examples will be in \texttt{C++}. Participants can feel free to use whatever programming language they feel more comfortable with.
+
+Most of the learning resources (including those produced by CPC UTEC) will be in English and have code in C++, as this is how information is usually found on the internet.
+
+\section{Introduction to Algorithms}
+
+\subsection{Definition}
+
+Algorithms arise as a way to formalize the ways we solve problems. For this reason you will see that the words algorithm and solution will often be used indistinctly. Probably you are familiar with the traditional definition of an algorithm: 
+\begin{center}
+	``An finite ordered set of instructions that attempt to solve a problem''
+\end{center}
+
+Even thought this definition gives as a general understanding of what an algorithm is, it leaves a very important concept hanging: What is an instruction. 
+
+\subsection{What it an instruction?}
+
+This question is much harder than it seems, as its answer depends on the context it is asked. More specifically on who is executing the instructions. This was one of the main challenges early computer scientists had to face when creating their theoretical models of computers.
+
+Luckily, today we don't have to wonder with the philosophical aspects of this question as we have computers that help us to answer this question in a practical manner.
+
+When we are talking about instructions in an algorithm we are talking about the instructions computers can do natively:
+
+\begin{itemize}
+	\item Arithmetic and Logical operations
+	\item Memory writing and reading
+	\item Conditional branching
+	\item Looping thru instructions
+\end{itemize}
+
+We will also call instruction or \textit{subprocesses} to all the algorithms we know we can build with this set of instructions. When we combine instructions into a subprocess we are abstracting all the primitive instructions a computer does into a single \textit{high level} instruction.
+
+\section{Algorithmic Analysis}
+
+To talk about algorithms we need to talk about problems, and if there is something almost all problems have in common is that there are a lot of distinct ways of tackling them. This is especially true in the context of CS, where a single problem can be solved by multiple algorithms. However are all of this solutions the same? 
+
+If we think about it, there are many ways in which we can measure how good a solution is. Here are just a few indicators we can use to evaluate different solutions to a problem:
+
+\begin{itemize}
+	\item How often it works
+	\item How much it costs
+	\item How long it takes
+	\item How simple it is
+\end{itemize}
+
+In algorithmic analysis we attempt to formalize all of this criteria in order to have a rigorous way of comparing solutions and evaluating their performance.
+
+\subsection{Measuring Time}
+
+In the context of Computer Science one of the most important measurements in order to determine the performance of an algorithm is how our algorithm takes to solve a problem. We want our solutions to be as fast as possible.
+
+Therefore a very important part of algorithm design is to evaluate the \textit{time complexity} of my algorithm. \textit{Time complexity} is a function that takes as input the input of my algorithm and outputs the time it should take to run. As you can imagine, knowing how long my algorithm will take to run before actually running it is \textbf{extremely} helpful.
+
+\subsection{Sampling and extrapolation}
+
+A first approach for measuring the performance of our solution is to experimentally take time measurements for different input sizes and trying to analyze the trend that the time follows. An easy way of doing this is by plotting the input size against time to get a function we can then \textit{extrapolate}. Using this method we can then experimentally compare the different algorithms we want to test.
+
+For example, let's say I have an array $a$ of number and I want to find the sum of all elements in this array. To solve this problem I make the following algorithm:
+
+\begin{algorithm}
+	\SetAlgoNoEnd
+	$s \gets 0$\;
+	\For{$i \gets 1$ \KwTo $n$}{
+		$s = s + a_i$\;
+	}
+\end{algorithm}
+
+I then implement it in some programming language and run it for arrays of different sizes. I get the following results:
+
+\begin{center}
+\begin{tabular}{ c | c }
+	Input Size & Time Taken \\ 
+	\hline
+	$1 \times 10^5$ & $0.002$ \\  
+	$5 \times 10^5$ & $0.008$ \\  
+	$1 \times 10^6$ & $0.012$ \\  
+	$5 \times 10^6$ & $0.573$ \\  
+	$1 \times 10^7$ & $0.122$ \\  
+\end{tabular}
+\end{center}
+
+From this we can estimate that the time our program takes will be directly proportional to the input size. Therefore we can estimate that if we had and array of size $5\times10^7$, our algorithm would take around $0.5$ seconds to run.
+
+As you can imagine this method has some mayor drawbacks:
+\begin{itemize}
+	\item We need to implement all the algorithms we want to compare.
+	\item We need to generate valid input for large test cases.
+	\item We are not sure if the extrapolation will be loyal to how our algorithm really scales.
+\end{itemize}
+
+Is there a better way of estimating how long an algorithm will run?
+
+\end{document}

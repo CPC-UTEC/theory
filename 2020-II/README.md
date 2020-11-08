@@ -25,7 +25,7 @@ Frequently Asked Questions: [FAQ](https://bit.ly/2Xf09Fa)
 **Useful Links:**  
 - [Lecture](https://drive.google.com/file/d/1BSXcyqhe9zuTzk8qhvYg1qMh_BTGh9gL/view?usp=sharing)
 
-### Week 4 - Recursion
+### Week 4 - Common Brute Force Techniques
 
 **Useful Links:**  
 - [Lecture](https://utec.zoom.us/rec/share/NojKTUNz7M-McGo7I1XboEnLpPbdKAJsU1d4moEWtgnBG-kiktDA_abcr20wLCge.0cHomXHStrAFdQRT?startTime=1602454118000)
